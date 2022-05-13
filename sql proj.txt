@@ -1,0 +1,17 @@
+query to find the person who knows to play both cricket and football
+select football.name from football inner join cricket on football.name=cricket.name;
+
+
+query to find the details of football player who knows to play cricket
+select * from football left join cricket on football.name=cricket.name;
+
+
+query to find the details cricket player player who knows to football
+select * from football right join cricket on football.name=cricket.name;
+
+
+query to find the details of cricket player and footbal player
+select * from football left join cricket on football.name=cricket.name where football.name is null union all
+select * from football right join cricket on football.name=cricket.name cricket.name is null  union all
+select * from football inner join cricket on football.name=cricket.name;
+
