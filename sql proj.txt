@@ -12,6 +12,5 @@ select * from football right join cricket on football.name=cricket.name;
 
 query to find the details of cricket player and footbal player
 select * from football left join cricket on football.name=cricket.name where football.name is null union all
-select * from football right join cricket on football.name=cricket.name cricket.name is null  union all
-select * from football inner join cricket on football.name=cricket.name;
+select * from football right join cricket on football.name=cricket.name cricket.name is null;
 
